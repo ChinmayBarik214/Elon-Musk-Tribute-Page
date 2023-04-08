@@ -11,6 +11,7 @@ body {
     font-family: Helvetica, sans-serif;
     color: hsl(0, 0%, 20%);
     background-color: #FFF;
+    overflow: overlay;
 }
 #main {
     margin: 30px 8px;
@@ -62,4 +63,29 @@ blockquote {
 a {
     color: #477CA7;
     text-decoration: none;
+}
+/* Styling scrollbars */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*::-webkit-scrollbar-track:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: rgba(255, 255, 255, 0.75);
 }
